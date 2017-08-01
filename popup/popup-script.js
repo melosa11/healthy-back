@@ -1,6 +1,7 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+const DEFAULT = "20";
 let powerPara = document.getElementById("power");
 let settings = document.getElementById("settings");
 let powerBttn = document.querySelector("input[type=checkbox]");
@@ -22,6 +23,22 @@ settings.onclick = function () {
 
 //**Power**
 powerBttn.onclick = function () {
+    function onGet(result) {
+        let interval = result.interval || DEFAULT;
+        powerChange(interval)
+    }
+    function onError(error) {
+        console.log(`Error: ${error}`)
+        powerChange(DEFAULT);
+    }
+
+    var get = browser.storage.local.get("interval");
+    get.then(onGet,onError);
+    
+    
+}
+
+function powerChange(interval) {
     if (powerBttn.checked) {
         on();
         browser.alarms.clearAll();

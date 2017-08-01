@@ -30,7 +30,6 @@ function saveSettings(e) {
     let interval = document.getElementById("interval").value;
     let isAlive = window.localStorage.getItem("alive") || "true";
     e.preventDefault();
-    console.log(interval);
     if (intCheck(interval) === true && isAlive === "true") {
         browser.storage.local.set({
             "interval": interval
