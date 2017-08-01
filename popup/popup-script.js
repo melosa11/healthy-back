@@ -43,7 +43,7 @@ function on() {
     browser.browserAction.setIcon({ path: "../icons/logo.svg" });
 }
 
-function off(params) {
+function off() {
     powerBttn.checked = false;
     window.localStorage.setItem("alive", "false");
     powerPara.textContent = "OFF";

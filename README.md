@@ -1,5 +1,12 @@
 # Healthy Back
 
-This is the repository of the web add-on for Mozilla Firefox
+This is the repository of the web add-on for Mozilla Firefox.
+You can download it from {linkholder}.
 
-Healthy Back notifies the user every 20 minutes (default) to sit straight up.
+## What it does ?
+
+Healthy Back notifies the user to sit straight up.
+
+## License
+
+Healthy back is licensed under the MPL 2.0. See LICENSE for more details.
