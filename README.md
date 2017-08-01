@@ -1,4 +1,4 @@
-#Healthy Back
+# Healthy Back
 
 This is the repository of this web add-on for Mozilla Firefox
 
