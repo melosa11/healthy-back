@@ -5,7 +5,7 @@ You can download it from {linkholder}.
 
 ## What it does ?
 
-Healthy Back notifies the user to sit straight up.
+Healthy Back notifies the user to sit up straight .
 
 ## License
 
