@@ -1,0 +1,34 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+html{
+    font-size: 10px;
+}
+
+body{
+    padding: 1rem;
+}
+
+label{
+    border-bottom: 1px dashed #aaa;
+    cursor: help;
+    font-size: 1.8rem;
+}
+
+input{
+    width: 10rem;
+    margin-right: 0.5rem;
+}
+
+button{
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+
+

@@ -1,0 +1,121 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+html {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  color: #241f20;
+}
+
+body{
+  width: 22rem;
+  padding: 1rem;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+header {
+  border-bottom: solid #666 0.05rem;
+  margin-bottom: 1rem; 
+}
+
+h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+div.power p {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-weight: bold;
+  width: 3.6rem;
+}
+/* Icons */
+
+.icons{
+  position: absolute;
+  width: 3.6rem;
+  cursor: pointer;
+  
+}
+.icons:hover {
+  width: 3.8rem;
+}
+.icons:active {
+  width: 3.6rem;
+}
+
+#settings {
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+#help{
+  
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+img.logo {
+  margin-bottom: 1.34rem;
+  width: 4.8rem;
+  vertical-align: middle;
+  
+}
+
+/* The Slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+  vertical-align: middle;
+  margin-bottom: 0.6rem;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 3.4rem;
+  transition: .1s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2.6rem;
+  width: 2.6rem;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: .1s;
+}
+
+input:checked + .slider {
+  background-color: #47d147;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 0.1rem #47d147   ;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.6rem);
+  -ms-transform: translateX(2.6rem);
+  transform: translateX(2.6rem);
+}
+
