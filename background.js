@@ -31,7 +31,7 @@ function createAlarm(interval) {
             "type": "basic",
             "title": "Your Body",
             "message": "Sit up straight!",
-            "iconUrl": browser.extension.getURL("icons/logo.svg")
+            "iconUrl": browser.extension.getURL("icons/notif-icon.svg")
         }
         )
     };
