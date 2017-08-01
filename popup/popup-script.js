@@ -12,7 +12,6 @@ if(isAlive === "true"){
 }
 else{
     off();
-    
 }
 
 //**Settings**
