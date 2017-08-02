@@ -1,7 +1,7 @@
 # Healthy Back
 
 This is the repository of the web add-on for Mozilla Firefox.
-You can download it from {linkholder}.
+You can download it from https://addons.mozilla.org/en-GB/firefox/addon/healthy-back/.
 
 ## What does it do ?
 
