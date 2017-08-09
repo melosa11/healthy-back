@@ -5,7 +5,6 @@ const DEFAULT = "20";
 let isAlive = window.localStorage.getItem("alive") || "true";
 //**Restore Settings **/
 function onGet(result) {
-    liveCheck(isAlive);
     let interval = result.interval || DEFAULT;
     console.log(interval);
     createAlarm(interval);
@@ -15,7 +14,7 @@ function onError(error) {
     interval = DEFAULT;
     createAlarm(interval);
 }
-
+liveCheck(isAlive);
 let get = browser.storage.local.get("interval");
 get.then(onGet, onError);   
 
