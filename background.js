@@ -3,7 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 const DEFAULT = "20";
 let isAlive = window.localStorage.getItem("alive") || "true";
-const SOUND = new Audio("notif.mp3");
+const SOUND = new Audio(browser.extension.getURL("notif.mp3"));
 //**Restore Settings **/
 function onGet(result) {
     let interval = result.interval || DEFAULT;
