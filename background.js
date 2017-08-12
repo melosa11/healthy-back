@@ -40,6 +40,7 @@ function createAlarm(interval) {
     browser.alarms.onAlarm.addListener(alarmListener);
 }
 
+// Check the live first time the browser is open 
 function liveCheck(par) {
     if(par === "true"){
         browser.browserAction.setIcon({ path: "../icons/logo.svg" });
