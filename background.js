@@ -3,6 +3,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 const DEFAULT = "20";
 let isAlive = window.localStorage.getItem("alive") || "true";
+const SOUND = new Audio("notif.mp3");
 //**Restore Settings **/
 function onGet(result) {
     let interval = result.interval || DEFAULT;
@@ -38,9 +39,12 @@ function createAlarm(interval) {
     };
 
     browser.alarms.onAlarm.addListener(alarmListener);
+    browser.alarms.onAlarm.addListener(function(){      //adds notification sound
+        SOUND.play();
+    });
 }
 
-// Check the live first time the browser is open 
+// Check the live first time the browser is open
 function liveCheck(par) {
     if(par === "true"){
         browser.browserAction.setIcon({ path: "../icons/logo.svg" });
@@ -49,3 +53,4 @@ function liveCheck(par) {
         browser.browserAction.setIcon({ path: "../icons/logo-off.svg" });
     }
 }
+
