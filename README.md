@@ -11,4 +11,4 @@ Healthy Back notifies the user to sit up straight .
 
 Healthy back is licensed under the MPL 2.0. See LICENSE for more details.
 
-"notif.mp3" is taken from notificationsounds.com (https://notificationsounds.com/sound-effects/what-302) and licensed udner CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+"notif.mp3" is taken from notificationsounds.com (https://notificationsounds.com/sound-effects/what-302) and licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
